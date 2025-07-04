@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engr. Gazi Nazmul Hoque - Civil Engineer | Structural Steel Specialist</title>
+    <meta name="description" content="Professional portfolio of Engr. Gazi Nazmul Hoque - Civil Engineer with expertise in structural steel design, BUET graduate with 150+ project experience">
+    <meta name="keywords" content="civil engineer, structural steel, BUET, AISC, ASCE, power plants, industrial facilities">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background: #667eea;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .navbar-blur {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        .skill-bar {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 navbar-blur border-b border-gray-200">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-gray-800">
+                    Engr. Gazi Nazmul Hoque
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 transition-colors">Experience</a>
+                    <div class="relative group">
+                        <a href="#" class="text-gray-700 hover:text-blue-600 transition-colors flex items-center">
+                            Projects <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute top-full left-0 mt-1 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <a href="rcc-projects.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-t-lg">
+                                <i class="fas fa-building mr-2"></i>RCC Projects
+                            </a>
+                            <a href="steel-projects.html" class="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors rounded-b-lg">
+                                <i class="fas fa-industry mr-2"></i>Steel Projects
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#education" class="text-gray-700 hover:text-blue-600 transition-colors">Education</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white border-t border-gray-200 hidden">
+            <div class="container mx-auto px-4 py-4 space-y-4">
+                <a href="#home" class="block text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                <a href="#experience" class="block text-gray-700 hover:text-blue-600 transition-colors">Experience</a>
+                <div class="space-y-2">
+                    <div class="text-gray-700 font-medium">Projects</div>
+                    <a href="rcc-projects.html" class="block pl-4 text-gray-600 hover:text-blue-600 transition-colors">
+                        <i class="fas fa-building mr-2"></i>RCC Projects
+                    </a>
+                    <a href="steel-projects.html" class="block pl-4 text-gray-600 hover:text-blue-600 transition-colors">
+                        <i class="fas fa-industry mr-2"></i>Steel Projects
+                    </a>
+                </div>
+                <a href="#skills" class="block text-gray-700 hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#education" class="block text-gray-700 hover:text-blue-600 transition-colors">Education</a>
+                <a href="#contact" class="block text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Profile Photo Placeholder -->
+                <div class="w-48 h-48 mx-auto mb-8 rounded-full bg-white/20 backdrop-blur-sm border-4 border-white/30 flex items-center justify-center">
+                    <i class="fas fa-user text-6xl text-white/80"></i>
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fade-in">
+                    Engr. Gazi Nazmul Hoque
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-light mb-6 text-blue-100">
+                    Civil Engineer | Structural Steel Specialist | BUET Graduate
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+                    Delivering Reliable & Efficient Structural Steel Solutions
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        Contact Me
+                    </a>
+                    <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors inline-flex items-center justify-center">
+                        <i class="fas fa-download mr-2"></i>
+                        View Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 section-title">About Me</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Engineering excellence through precision, innovation, and unwavering commitment to structural integrity.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="prose prose-lg text-gray-700">
+                            <p class="mb-6">
+                                I am a highly experienced civil engineer with a deep specialization in structural steel design and execution. With a B.Sc. in Civil Engineering from BUET (Class of 2015, Batch of 2009), I have contributed to over 150 industrial and power plant projects, both in Bangladesh and internationally.
+                            </p>
+                            <p class="mb-6">
+                                My expertise lies in applying American Building Codes (AISC, ASCE, AWS, UBC, ACI) and international structural standards, ensuring the highest levels of safety, efficiency, and cost-effectiveness in every design. I am passionate about delivering engineering solutions that stand the test of time.
+                            </p>
+                            <p>
+                                I specialize in structural retrofitting and rehabilitation, multidisciplinary design coordination, and solving complex design challenges with practical, real-world engineering solutions that prioritize both structural integrity and economic viability.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                            <h3 class="text-2xl font-semibold text-gray-800 mb-6">Key Specializations</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
+                                    <span class="text-gray-700">Structural Retrofitting & Rehabilitation</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
+                                    <span class="text-gray-700">Multidisciplinary Design Coordination</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
+                                    <span class="text-gray-700">Complex Design Challenge Solutions</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
+                                    <span class="text-gray-700">International Code Compliance</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 section-title">Experience & Projects</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Over 150+ successful projects across Bangladesh and international markets, specializing in industrial and power plant facilities.
+                </p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <!-- Project Stats -->
+                <div class="grid md:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">150+</div>
+                        <div class="text-gray-600">Projects Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">15+</div>
+                        <div class="text-gray-600">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                        <div class="text-gray-600">Power Plants</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-blue-600 mb-2">100+</div>
+                        <div class="text-gray-600">Industrial Facilities</div>
+                    </div>
+                </div>
+
+                <!-- Project Categories -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-industry text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Industrial Facilities</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Manufacturing Plants
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Warehouses & Storage
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Processing Facilities
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Heavy Equipment Structures
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-bolt text-2xl text-purple-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Power Plants</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Thermal Power Plants
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Combined Cycle Plants
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Substation Structures
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Transmission Towers
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                        <div class="text-center mb-6">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-tools text-2xl text-green-600"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-800">Retrofitting & Rehabilitation</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Structural Strengthening
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Seismic Upgrades
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Code Compliance Updates
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                Life Extension Projects
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 section-title">Skills & Expertise</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive expertise in structural analysis, design codes, and cutting-edge engineering software.
+                </p>
+            </div>
+            
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Technical Skills -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-8">Technical Skills</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-700 font-medium">Structural Steel Design</span>
+                                    <span class="text-blue-600 font-semibold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar h-2 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-700 font-medium">Structural Analysis</span>
+                                    <span class="text-blue-600 font-semibold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar h-2 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-700 font-medium">Retrofitting & Strengthening</span>
+                                    <span class="text-blue-600 font-semibold">Expert</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-700 font-medium">Project Management</span>
+                                    <span class="text-blue-600 font-semibold">Advanced</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="skill-bar h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Codes & Software -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-8">Codes & Software</h3>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-lg font-medium text-gray-700 mb-4">Building Codes</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-book text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">AISC</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-book text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">ASCE</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-book text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">AWS</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-book text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">UBC</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-book text-blue-600 mr-3"></i>
+                                    <span class="text-gray-700">ACI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-lg font-medium text-gray-700 mb-4">Engineering Software</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-laptop-code text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">STAAD.Pro</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-laptop-code text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">ETABS</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-laptop-code text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">SAP2000</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-laptop-code text-purple-600 mr-3"></i>
+                                    <span class="text-gray-700">AutoCAD</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 section-title">Education</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Strong foundation in civil engineering from one of Bangladesh's most prestigious institutions.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mr-6">
+                            <i class="fas fa-graduation-cap text-3xl text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-800">Bachelor of Science in Civil Engineering</h3>
+                            <p class="text-xl text-blue-600 font-medium">Bangladesh University of Engineering and Technology (BUET)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-700 mb-4">Academic Details</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-calendar text-blue-600 mr-3"></i>
+                                    <span><strong>Graduation Year:</strong> 2015</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-users text-blue-600 mr-3"></i>
+                                    <span><strong>Batch:</strong> 2009</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-award text-blue-600 mr-3"></i>
+                                    <span><strong>Degree:</strong> B.Sc. Civil Engineering</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-lg font-semibold text-gray-700 mb-4">Institution Highlights</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                                    <span>Premier Engineering Institution</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                                    <span>Top-ranked Civil Engineering Program</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-star text-yellow-500 mr-3"></i>
+                                    <span>Research-focused Curriculum</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 section-title">Get In Touch</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Ready to discuss your next structural engineering project? Let's connect and explore how we can work together.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-8">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-gray-600">Email</div>
+                                    <div class="text-gray-800 font-medium">nazmul.civil@example.com</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fab fa-linkedin text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-gray-600">LinkedIn</div>
+                                    <div class="text-gray-800 font-medium">linkedin.com/in/nazmul-hasan-civil</div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <div class="text-gray-600">Location</div>
+                                    <div class="text-gray-800 font-medium">Dhaka, Bangladesh</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl">
+                            <h4 class="text-lg font-semibold text-gray-800 mb-4">Let's Collaborate</h4>
+                            <p class="text-gray-600 mb-4">
+                                Whether you need structural design, analysis, or consultation services, I'm here to help bring your engineering vision to life.
+                            </p>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                                    <i class="fab fa-linkedin text-2xl"></i>
+                                </a>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 transition-colors">
+                                    <i class="fab fa-github text-2xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-8">Send a Message</h3>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Engr. Gazi Nazmul Hoque</h3>
+                <p class="text-gray-400 mb-6">
+                    Civil Engineer | Structural Steel Specialist | BUET Graduate
+                </p>
+                <div class="flex justify-center space-x-6 mb-8">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-github text-2xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+                <div class="border-t border-gray-700 pt-8">
+                    <p class="text-gray-400">
+                        &copy; 2024 Engr. Gazi Nazmul Hoque. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
